@@ -97,7 +97,7 @@ public class validarMensagem {
 		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
 		
 		try {
-		    Thread.sleep(5000);
+		    Thread.sleep(3000);
 		} catch (InterruptedException e) {
 		    e.printStackTrace();
 		}
@@ -131,10 +131,10 @@ public class validarMensagem {
                 )
         );
         
-	    String mensagemAtualFinal = mensagemConfirmacao.getText();
-	    String mensagemEsperadaFinal = "Your data has been successfully deleted from the database.";
-	    
-	    assertEquals(mensagemEsperada, mensagemAtual);
+        String mensagemAtual1 = mensagemFinal.getText();
+        String mensagemEsperada1 = "Your data has been successfully deleted from the database.";
+        assertEquals(mensagemEsperada1, mensagemAtual1);
+
 
 	}
 }
